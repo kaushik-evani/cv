@@ -145,6 +145,9 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
+\definecolor{awesome-ultramarine}{HTML}{5D8CAE}
+\definecolor{awesome-piction}{HTML}{59ABE3}
+%808F85
 \colorlet{awesome}{awesome-red}
 
 % Boolean value to switch section color highlighting
@@ -179,8 +182,8 @@
 ]{Roboto}
 
 \newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\bodyfont}{\headerfont}
+\newcommand*{\bodyfontlight}{\headerfontlight}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
@@ -432,7 +435,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
+            \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
         }%
       \ifthenelse{\isundefined{\@twitter}}%
         {}%
